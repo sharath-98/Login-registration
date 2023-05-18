@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LoginApp.Data;
 using LoginApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LoginApp.Controllers
 {
+    [Authorize]
     public class LeadsController : Controller
     {
         private readonly ApplicationDbContext _context;
