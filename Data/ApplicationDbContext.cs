@@ -7,6 +7,6 @@ namespace LoginApp.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        DbSet<SalesLeadEntity> SalesLead { get; set; }
+        public DbSet<SalesLeadEntity> SalesLead { get; set; }
     }
 }
